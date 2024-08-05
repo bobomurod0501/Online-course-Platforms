@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Notable&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Distressed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bruno+Ace&family=Notable&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik+Distressed&family=Sunflower:wght@300&display=swap');
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    padding: 10px;
+}
+.logo-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: rgba(28, 17, 41, 0.88);
+}
+.toggle-theme-btn{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.menu-bar{
+    height: 88vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1rem;
+    position: relative;
+}
+.card{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid black;
+    /* padding: 20px; */
+    width: 250px;
+    height: 400px;
+}
+.wraper{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px auto;
+}
+.teacherImg{
+    width: 900px;
+    height: 500px;
+    clip-path: polygon(0 0, 100% 0, 85% 37%, 100% 100%, 0 100%, 0% 50%);
+}
+.headerAboutCourse{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: relative; */
+}
+.component{
+    background-color: aliceblue;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.heroTitle{
+    font-size: 66px;
+    color: #9342AD;
+}
+.codeName{
+    color: #48B5B7;
+}
+#backBtn{
+    position: absolute;
+    top: 500px;
+    right: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.loremTxt{
+    font-size: 22px;
+    color: #7D7D7D;
+    margin-top: -20px;
+}
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: #949494;
+    margin: 50px 0;
+}
+.informationCourse{
+    font-size: 22px;
+    color: #686868;
+    border: 1px solid rgb(29, 29, 87);
+    width: 50%;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.icon{
+    color: #0a2554;
+}
+.info{
+    color: #0a2554;
+    font-weight: 600;
+}
+.informationTitle{
+    font-size: 40px;
+    color: #0a2554;
+}
+.homeLogoImg{
+    width: 100%;
+    margin-right: 50px;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 250px;
+    padding-left: 150px;
+    
+}
+.hatImg{
+    width: 100%;
+    height: 99.6vh;
+    clip-path: polygon(14% 0, 100% 0%, 100% 100%, 17% 100%, 0% 50%);
+    object-fit: unset;
+}
+.inputs{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.loginBack{
+background: rgb(222,213,129);
+background: linear-gradient(20deg, rgba(222,213,129,1) 0%, rgba(196,178,145,1) 21%, rgba(255,255,255,1) 46%, rgba(247,237,123,1) 68%, rgba(255,255,255,1) 89%, rgba(0,212,255,1) 100%);
+}
+.login{
+    color: #0a2554;
+         font-family: "Audiowide", sans-serif;
+}
+.submitBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.enrollBtn {
+ align-items: center;
+ background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+ border: 0;
+ border-radius: 8px;
+ box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+ box-sizing: border-box;
+ color: #FFFFFF;
+ display: flex;
+ font-family: Phantomsans, sans-serif;
+ font-size: 18px;
+ justify-content: center;
+ line-height: 1em;
+ max-width: 100%;
+ min-width: 140px;
+ padding: 3px;
+ text-decoration: none;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ white-space: nowrap;
+ cursor: pointer;
+ transition: all .3s;
+}
+
+.enrollBtn:active,
+.enrollBtn:hover {
+ outline: 0;
+}
+
+.enrollBtn span {
+ background-color: rgb(5, 6, 45);
+ padding: 16px 24px;
+ border-radius: 6px;
+ width: 100%;
+ height: 100%;
+ transition: 300ms;
+}
+
+.enrollBtn:hover span {
+ background: none;
+}
+
+.enrollBtn:active {
+ transform: scale(0.9);
+}
+/* Back Btn ============================================ */
+.back {
+  background: transparent;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: 20px 30px;
+  cursor: pointer;
+  perspective: 30rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+}
+
+.back::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    320deg,
+    rgba(0, 140, 255, 0.678),
+    rgba(128, 0, 128, 0.308)
+  );
+  z-index: 1;
+  transition: background 3s;
+}
+
+.back:hover::before {
+  animation: rotate 1s;
+  transition: all 0.5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalLeft{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.modalRight{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+/* Submit Button Styles */
+/* From Uiverse.io by adamgiebl */ 
+.submitBtn {
+  font-size: 17px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow,transform;
+  background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: #fff;
+  height: 2.4em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.submitBtn:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  transform: translateY(-0.1em);
+}
+
+.submitBtn:active {
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
+/* Submit styles ended */
+
+
+/* Cancel button styles */
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.resetBtn {
+  color: white;
+  background-color: #222;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+}
+
+.resetBtn:hover {
+  background-color: #333;
+}
+
+.resetBtn svg {
+  display: inline;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.75rem;
+  color: white;
+}
+
+.resetBtn:focus svg {
+  animation: spin_357 0.5s linear;
+}
+
+@keyframes spin_357 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Cancel button styles ended */
+
+/* Modal buttons */
+.modalBtns{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.line2{
+    height: 2px;
+    width: 100%;
+    background-color: rgb(134, 134, 138);
+    margin: 20px 0;
+}
+.madalImg{
+    width: 100px;
+}
+.madalBrand{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: -15px 0;
+     font-family: "Sunflower", sans-serif;
+}
+
+.modalBrandBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+}
