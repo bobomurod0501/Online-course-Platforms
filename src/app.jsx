@@ -5,6 +5,19 @@ import Logo from "./components/Logo";
 import ToggleThemeButton from "./components/ToggleThemeButton";
 import axios from "axios";
 import HomePage from "./contents/HomePage";
+import FooterPage from "./components/FooterPage";
+import { createContext } from "react";
+
+
+
+
+
+export const contextProvider = createContext(null)
+
+
+
+
+
 
 const { Header, Sider, Content, Footer } = Layout;
 
@@ -31,9 +44,10 @@ const siderStyle = {
   userSelect: "none",
 };
 const footerStyle = {
-  textAlign: "center",
+  // textAlign: "center",
   color: "#fff",
-  backgroundColor: "#4096ff",
+  backgroundColor: "#233A6C",
+  paddingLeft:"230px"
 };
 const layoutStyle = {
   width: "calc(100% - 8px)",
@@ -44,13 +58,14 @@ const layoutStyle = {
 function App() {
 
   const [dark, setDark] = useState(false);
+  const enrolledCourseData = useState()
 
   const toggleTheme = () => {
     setDark(!dark);
   };
 
   return (
-    <div>
+    <contextProvider.Provider value={{}}>
       <Layout style={layoutStyle}>
         <Sider width="10%" style={siderStyle}>
           <Logo />
@@ -62,33 +77,15 @@ function App() {
           <Content style={contentStyle}>
               <HomePage />
           </Content>                          
-          <Footer style={footerStyle}>Footer</Footer>
+          <Footer style={footerStyle}>
+            <FooterPage />
+          </Footer>
         </Layout>
       </Layout>
-    </div>
+    </contextProvider.Provider>
   );
 }
 
 export default App;
 
-// export function Content1() {
-//   return (
-//     <div>
-//       <Routes>
-//         <Route path="/home" element={<HomePage />}></Route>
-//         <Route
-//           path="/dashboard"
-//           element={<div className="box">Dashboard</div>}
-//         ></Route>
-//         <Route path="/activeuser" element={<div>Active User List</div>}></Route>
-//         <Route
-//           path="/disableuser"
-//           element={<div> Disabled User List</div>}
-//         ></Route>
-//         <Route path="/profile" element={<div>Profile</div>}></Route>
-//         <Route path="/home/:courseId" element={<AboutCourse />}></Route>
-//       </Routes>
-//     </div>
-//   );
-// }
 

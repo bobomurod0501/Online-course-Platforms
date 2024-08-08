@@ -32,7 +32,7 @@ export function MenuList({ darkTheme }) {
         items={[
           { label: "Home", key: "/home", icon: <HomeOutlined /> },
           {
-            label: "Dashboard",
+            label: "Quizz test",
             key: "/dashboard",
             icon: <DashboardOutlined />,
           },

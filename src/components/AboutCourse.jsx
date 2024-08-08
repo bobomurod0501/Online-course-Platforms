@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Box } from "@mui/material/";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
@@ -13,10 +13,9 @@ import Modal from "@mui/material/Modal";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
-// import Button from "@mui/material/Button";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
-// import Button from "@mui/material/Button";
+// import { contextProvider } from "../provider/MainProvider";
 
 import {
   Button,
@@ -48,11 +47,6 @@ const style = {
 };
 
 function AboutCourse() {
-  // const [openSnackbar, setOpenSnackbar] = useState(false);
-
-  // const handleClick = () => {
-  //   setOpenSnackbar(true);
-  // };
 
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
@@ -61,14 +55,14 @@ function AboutCourse() {
   };
 
   const handleCloseSnackbar = (event, reason) => {
-    if (reason === 'clickaway') {
+    if (reason === "clickaway") {
       return;
     }
 
     setOpenSnackbar(false);
   };
 
-    const [state1, setState] = useState({
+  const [state1, setState] = useState({
     vertical: "top",
     horizontal: "right",
   });
@@ -136,6 +130,7 @@ function AboutCourse() {
     }, 2000);
   };
 
+
   return (
     <div className="component">
       <Snackbar
@@ -152,7 +147,7 @@ function AboutCourse() {
           variant="filled"
           sx={{ width: "100%" }}
         >
-         Congratulations! You are enrolled the course
+          Congratulations! You are enrolled the course
         </Alert>
       </Snackbar>
       <div>
@@ -173,10 +168,6 @@ function AboutCourse() {
             <span className="codeName">{filteredData[0].shortName}</span>{" "}
             courses
           </h1>
-          {/* <p className="loremTxt">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id commodi
-            quam perferendis nam animi sapiente atque consequuntur,
-          </p> */}
         </div>
       </div>
       <div id="backBtn">
@@ -211,11 +202,13 @@ function AboutCourse() {
                     age: "",
                     password: "",
                     gender: "",
+                    id:filteredData[0].id
                   }}
                   onSubmit={(values) => {
                     loadingPage();
                     setOpen(false);
-                    console.log(values);
+                    console.log(values)
+
                   }}
                 >
                   {(props) => (
@@ -238,12 +231,9 @@ function AboutCourse() {
                         </div>
                         <div className="line2"></div>
                         <Box
-                          // component="form"
                           sx={{
                             width: 650,
                             display: "flex",
-                            //  alignItems:"flex-start",
-                            //  justifyContent:"space-around",
                             gap: "50px",
                             marginLeft: "50px",
                           }}
@@ -348,9 +338,6 @@ function AboutCourse() {
                               }
                             />
                             <FormControl>
-                              {/* <FormLabel id="demo-row-radio-buttons-group-label">
-                                Gender
-                              </FormLabel> */}
                               <RadioGroup
                                 row
                                 aria-labelledby="demo-row-radio-buttons-group-label"

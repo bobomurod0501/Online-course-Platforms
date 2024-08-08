@@ -1,304 +1,659 @@
 {
-  "courses":[
-  {
-    "id": 1,
-    "name":"John Doe",
-    "shortName":"React",
-    "tImage":"https://i.ytimg.com/vi/tiLWCNFzThE/maxresdefault.jpg",
-    "username": "Bret",
-    "email": "Sincere@april.biz",
-    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s",
-    "SName":"React course",
-    "price":"52$",
-    "duration":"6 Month",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
-    "address": {
-      "street": "Kulas Light",
-      "suite": "Apt. 556",
-      "city": "Gwenborough",
-      "zipcode": "92998-3874",
-      "geo": {
-        "lat": "-37.3159",
-        "lng": "81.1496"
+  "courses": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "shortName": "React",
+      "tImage": "https://i.ytimg.com/vi/tiLWCNFzThE/maxresdefault.jpg",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7rysmw8Lw3y23LjiGZjCNlSETkSKjHp5g&s",
+      "SName": "React course",
+      "price": "52$",
+      "duration": "6 Month",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
+      "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "bs": "harness real-time e-markets"
       }
     },
-    "phone": "1-770-736-8031 x56442",
-    "website": "hildegard.org",
-    "company": {
-      "name": "Romaguera-Crona",
-      "catchPhrase": "Multi-layered client-server neural-net",
-      "bs": "harness real-time e-markets"
-    }
-  },
-  {
-    "id": 2,
-    "shortName":"Javascript",
-    "name": "Ervin Howell",
-    "tImage":"https://i.ytimg.com/vi/LRLMs0TCflE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAIqAlIyMFgOOmnpzxG73ehNGjL6w",
-    "username": "Antonette",
-    "email": "Shanna@melissa.tv",
-        "image":"https://www.shutterstock.com/image-vector/javascript-web-technology-shield-site-260nw-1186054663.jpg",
-    "SName":"Javascript",
-    "price":"522$",
-    "duration":"6 Month",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
-    "address": {
-      "street": "Victor Plains",
-      "suite": "Suite 879",
-      "city": "Wisokyburgh",
-      "zipcode": "90566-7771",
-      "geo": {
-        "lat": "-43.9509",
-        "lng": "-34.4618"
+    {
+      "id": 2,
+      "shortName": "Javascript",
+      "name": "Ervin Howell",
+      "tImage": "https://i.ytimg.com/vi/LRLMs0TCflE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAIqAlIyMFgOOmnpzxG73ehNGjL6w",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "image": "https://www.shutterstock.com/image-vector/javascript-web-technology-shield-site-260nw-1186054663.jpg",
+      "SName": "Javascript",
+      "price": "522$",
+      "duration": "6 Month",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
+      "address": {
+        "street": "Victor Plains",
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "zipcode": "90566-7771",
+        "geo": {
+          "lat": "-43.9509",
+          "lng": "-34.4618"
+        }
+      },
+      "phone": "010-692-6593 x09125",
+      "website": "anastasia.net",
+      "company": {
+        "name": "Deckow-Crist",
+        "catchPhrase": "Proactive didactic contingency",
+        "bs": "synergize scalable supply-chains"
       }
     },
-    "phone": "010-692-6593 x09125",
-    "website": "anastasia.net",
-    "company": {
-      "name": "Deckow-Crist",
-      "catchPhrase": "Proactive didactic contingency",
-      "bs": "synergize scalable supply-chains"
-    }
-  },
-  {
-    "id": 3,
-    "shortName":"CSS",
-    "name": "Clementine Bauch",
-    "tImage":"https://www.deped.gov.ph/wp-content/uploads/2019/09/PHOTO-2-2.jpeg",
-    "username": "Samantha",
-    "email": "Nathan@yesenia.net",
-        "image":"https://logowik.com/content/uploads/images/123_css3.jpg",
-    "SName":"CSS course",
-    "price":"152$",
-    "duration":"6 Month",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
-    "address": {
-      "street": "Douglas Extension",
-      "suite": "Suite 847",
-      "city": "McKenziehaven",
-      "zipcode": "59590-4157",
-      "geo": {
-        "lat": "-68.6102",
-        "lng": "-47.0653"
+    {
+      "id": 3,
+      "shortName": "CSS",
+      "name": "Clementine Bauch",
+      "tImage": "https://www.deped.gov.ph/wp-content/uploads/2019/09/PHOTO-2-2.jpeg",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "image": "https://logowik.com/content/uploads/images/123_css3.jpg",
+      "SName": "CSS course",
+      "price": "152$",
+      "duration": "6 Month",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
+      "address": {
+        "street": "Douglas Extension",
+        "suite": "Suite 847",
+        "city": "McKenziehaven",
+        "zipcode": "59590-4157",
+        "geo": {
+          "lat": "-68.6102",
+          "lng": "-47.0653"
+        }
+      },
+      "phone": "1-463-123-4447",
+      "website": "ramiro.info",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Face to face bifurcated interface",
+        "bs": "e-enable strategic applications"
       }
     },
-    "phone": "1-463-123-4447",
-    "website": "ramiro.info",
-    "company": {
-      "name": "Romaguera-Jacobson",
-      "catchPhrase": "Face to face bifurcated interface",
-      "bs": "e-enable strategic applications"
-    }
-  },
-  {
-    "id": 4,
-    "shortName":"HTML",
-    "name": "Patricia Lebsack",
-    "username": "Karianne",
-    "tImage":"https://s.tmimgcdn.com/scr/400x250/425000/eduleb-education-html-template_425089-original.jpg",
-    "email": "Julianne.OConner@kory.org",
-        "image":"https://thumbs.dreamstime.com/z/html-logo-editorial-illustrative-white-background-eps-download-vector-jpeg-banner-html-logo-editorial-illustrative-white-208329416.jpg",
-    "SName":"HTML course",
-    "price":"82$",
-    "duration":"6 Month",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
-    "address": {
-      "street": "Hoeger Mall",
-      "suite": "Apt. 692",
-      "city": "South Elvis",
-      "zipcode": "53919-4257",
-      "geo": {
-        "lat": "29.4572",
-        "lng": "-164.2990"
+    {
+      "id": 4,
+      "shortName": "HTML",
+      "name": "Patricia Lebsack",
+      "username": "Karianne",
+      "tImage": "https://s.tmimgcdn.com/scr/400x250/425000/eduleb-education-html-template_425089-original.jpg",
+      "email": "Julianne.OConner@kory.org",
+      "image": "https://thumbs.dreamstime.com/z/html-logo-editorial-illustrative-white-background-eps-download-vector-jpeg-banner-html-logo-editorial-illustrative-white-208329416.jpg",
+      "SName": "HTML course",
+      "price": "82$",
+      "duration": "6 Month",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
+      "address": {
+        "street": "Hoeger Mall",
+        "suite": "Apt. 692",
+        "city": "South Elvis",
+        "zipcode": "53919-4257",
+        "geo": {
+          "lat": "29.4572",
+          "lng": "-164.2990"
+        }
+      },
+      "phone": "493-170-9623 x156",
+      "website": "kale.biz",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Multi-tiered zero tolerance productivity",
+        "bs": "transition cutting-edge web services"
       }
     },
-    "phone": "493-170-9623 x156",
-    "website": "kale.biz",
-    "company": {
-      "name": "Robel-Corkery",
-      "catchPhrase": "Multi-tiered zero tolerance productivity",
-      "bs": "transition cutting-edge web services"
-    }
-  },
-  {
-    "id": 5,
-    "shortName":"Typescript",
-    "name": "Chelsey Dietrich",
-    "username": "Kamren",
-    "tImage":"https://i.ytimg.com/vi/hn1gd-hpl3M/mqdefault.jpg",
-    "email": "Lucio_Hettinger@annie.ca",
-        "image":"https://ih1.redbubble.net/image.806255621.2478/flat,750x,075,f-pad,750x1000,f8f8f8.u8.jpg",
-    "SName":"Typescript course",
-    "price":"45$",
-    "duration":"6 Month",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
-    "address": {
-      "street": "Skiles Walks",
-      "suite": "Suite 351",
-      "city": "Roscoeview",
-      "zipcode": "33263",
-      "geo": {
-        "lat": "-31.8129",
-        "lng": "62.5342"
+    {
+      "id": 5,
+      "shortName": "Typescript",
+      "name": "Chelsey Dietrich",
+      "username": "Kamren",
+      "tImage": "https://i.ytimg.com/vi/hn1gd-hpl3M/mqdefault.jpg",
+      "email": "Lucio_Hettinger@annie.ca",
+      "image": "https://ih1.redbubble.net/image.806255621.2478/flat,750x,075,f-pad,750x1000,f8f8f8.u8.jpg",
+      "SName": "Typescript course",
+      "price": "45$",
+      "duration": "6 Month",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
+      "address": {
+        "street": "Skiles Walks",
+        "suite": "Suite 351",
+        "city": "Roscoeview",
+        "zipcode": "33263",
+        "geo": {
+          "lat": "-31.8129",
+          "lng": "62.5342"
+        }
+      },
+      "phone": "(254)954-1289",
+      "website": "demarco.info",
+      "company": {
+        "name": "Keebler LLC",
+        "catchPhrase": "User-centric fault-tolerant solution",
+        "bs": "revolutionize end-to-end systems"
       }
     },
-    "phone": "(254)954-1289",
-    "website": "demarco.info",
-    "company": {
-      "name": "Keebler LLC",
-      "catchPhrase": "User-centric fault-tolerant solution",
-      "bs": "revolutionize end-to-end systems"
-    }
-  },
-  {
-    "id": 6,
-    "shortName":"Java",
-    "name": "Mrs. Dennis Schulist",
-    "username": "Leopoldo_Corkery",
-    "tImage":"https://softuni.org/wp-content/uploads/2021/10/Java-Basics-Tutorial-Part-3-Input-and-Output-1024x576.png",
-    "email": "Karley_Dach@jasper.info",
-        "image":"https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/08/a-java-logo-against-a-beige-background.jpg",
-    "SName":"Java course",
-    "price":"522$",
-    "duration":"6 Month",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
-    "address": {
-      "street": "Norberto Crossing",
-      "suite": "Apt. 950",
-      "city": "South Christy",
-      "zipcode": "23505-1337",
-      "geo": {
-        "lat": "-71.4197",
-        "lng": "71.7478"
+    {
+      "id": 6,
+      "shortName": "Java",
+      "name": "Mrs. Dennis Schulist",
+      "username": "Leopoldo_Corkery",
+      "tImage": "https://softuni.org/wp-content/uploads/2021/10/Java-Basics-Tutorial-Part-3-Input-and-Output-1024x576.png",
+      "email": "Karley_Dach@jasper.info",
+      "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/08/a-java-logo-against-a-beige-background.jpg",
+      "SName": "Java course",
+      "price": "522$",
+      "duration": "6 Month",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
+      "address": {
+        "street": "Norberto Crossing",
+        "suite": "Apt. 950",
+        "city": "South Christy",
+        "zipcode": "23505-1337",
+        "geo": {
+          "lat": "-71.4197",
+          "lng": "71.7478"
+        }
+      },
+      "phone": "1-477-935-8478 x6430",
+      "website": "ola.org",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Synchronised bottom-line interface",
+        "bs": "e-enable innovative applications"
       }
     },
-    "phone": "1-477-935-8478 x6430",
-    "website": "ola.org",
-    "company": {
-      "name": "Considine-Lockman",
-      "catchPhrase": "Synchronised bottom-line interface",
-      "bs": "e-enable innovative applications"
-    }
-  },
-  {
-    "id": 7,
-    "shortName":"Phyton",
-    "name": "Kurtis Weissnat",
-    "username": "Elwyn.Skiles",
-    "tImage":"https://static.wixstatic.com/media/9f58f1_a98efa9dade141f29c3fe1e43b92545b~mv2.jpg/v1/fill/w_1258,h_668,al_c/9f58f1_a98efa9dade141f29c3fe1e43b92545b~mv2.jpg",
-    "email": "Telly.Hoeger@billy.biz",
-        "image":"https://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/python-icon.png",
-    "SName":"Phyton course",
-    "price":"35$",
-    "duration":"6 Month",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
-    "address": {
-      "street": "Rex Trail",
-      "suite": "Suite 280",
-      "city": "Howemouth",
-      "zipcode": "58804-1099",
-      "geo": {
-        "lat": "24.8918",
-        "lng": "21.8984"
+    {
+      "id": 7,
+      "shortName": "Phyton",
+      "name": "Kurtis Weissnat",
+      "username": "Elwyn.Skiles",
+      "tImage": "https://static.wixstatic.com/media/9f58f1_a98efa9dade141f29c3fe1e43b92545b~mv2.jpg/v1/fill/w_1258,h_668,al_c/9f58f1_a98efa9dade141f29c3fe1e43b92545b~mv2.jpg",
+      "email": "Telly.Hoeger@billy.biz",
+      "image": "https://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/python-icon.png",
+      "SName": "Phyton course",
+      "price": "35$",
+      "duration": "6 Month",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
+      "address": {
+        "street": "Rex Trail",
+        "suite": "Suite 280",
+        "city": "Howemouth",
+        "zipcode": "58804-1099",
+        "geo": {
+          "lat": "24.8918",
+          "lng": "21.8984"
+        }
+      },
+      "phone": "210.067.6132",
+      "website": "elvis.io",
+      "company": {
+        "name": "Johns Group",
+        "catchPhrase": "Configurable multimedia task-force",
+        "bs": "generate enterprise e-tailers"
       }
     },
-    "phone": "210.067.6132",
-    "website": "elvis.io",
-    "company": {
-      "name": "Johns Group",
-      "catchPhrase": "Configurable multimedia task-force",
-      "bs": "generate enterprise e-tailers"
-    }
-  },
-  {
-    "id": 8,
-    "shortName":"SASS",
-    "name": "Nicholas Runolfsdottir V",
-    "username": "Maxime_Nienow",
-    "tImage":"https://www.haslett.k12.mi.us/cms/lib/MI02212134/Centricity/Domain/1480/WIN_20200803_10_37_31_Pro.jpg",
-    "email": "Sherwood@rosamond.me",
-        "image":"https://thumbs.dreamstime.com/b/sass-logo-icon-vector-logos-logo-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-jpeg-emblem-wallpaper-background-sass-logo-208332857.jpg",
-    "SName":"SASS course",
-    "price":"125$",
-    "duration":"6 Month",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
-    "address": {
-      "street": "Ellsworth Summit",
-      "suite": "Suite 729",
-      "city": "Aliyaview",
-      "zipcode": "45169",
-      "geo": {
-        "lat": "-14.3990",
-        "lng": "-120.7677"
+    {
+      "id": 8,
+      "shortName": "SASS",
+      "name": "Nicholas Runolfsdottir V",
+      "username": "Maxime_Nienow",
+      "tImage": "https://www.haslett.k12.mi.us/cms/lib/MI02212134/Centricity/Domain/1480/WIN_20200803_10_37_31_Pro.jpg",
+      "email": "Sherwood@rosamond.me",
+      "image": "https://thumbs.dreamstime.com/b/sass-logo-icon-vector-logos-logo-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-jpeg-emblem-wallpaper-background-sass-logo-208332857.jpg",
+      "SName": "SASS course",
+      "price": "125$",
+      "duration": "6 Month",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
+      "address": {
+        "street": "Ellsworth Summit",
+        "suite": "Suite 729",
+        "city": "Aliyaview",
+        "zipcode": "45169",
+        "geo": {
+          "lat": "-14.3990",
+          "lng": "-120.7677"
+        }
+      },
+      "phone": "586.493.6943 x140",
+      "website": "jacynthe.com",
+      "company": {
+        "name": "Abernathy Group",
+        "catchPhrase": "Implemented secondary concept",
+        "bs": "e-enable extensible e-tailers"
       }
     },
-    "phone": "586.493.6943 x140",
-    "website": "jacynthe.com",
-    "company": {
-      "name": "Abernathy Group",
-      "catchPhrase": "Implemented secondary concept",
-      "bs": "e-enable extensible e-tailers"
-    }
-  },
-  {
-    "id": 9,
-    "shortName":"Bootstrap",
-    "name": "Glenna Reichert",
-    "username": "Delphine",
-    "tImage":"https://i.ytimg.com/vi/7mhLNwcBWyE/maxresdefault.jpg",
-    "email": "Chaim_McDermott@dana.io",
-        "image":"https://logowik.com/content/uploads/images/bootstrap-new725.logowik.com.webp",
-    "SName":"Bootstrap course",
-    "price":"365$",
-    "duration":"6 Month",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
-    "address": {
-      "street": "Dayna Park",
-      "suite": "Suite 449",
-      "city": "Bartholomebury",
-      "zipcode": "76495-3109",
-      "geo": {
-        "lat": "24.6463",
-        "lng": "-168.8889"
+    {
+      "id": 9,
+      "shortName": "Bootstrap",
+      "name": "Glenna Reichert",
+      "username": "Delphine",
+      "tImage": "https://i.ytimg.com/vi/7mhLNwcBWyE/maxresdefault.jpg",
+      "email": "Chaim_McDermott@dana.io",
+      "image": "https://logowik.com/content/uploads/images/bootstrap-new725.logowik.com.webp",
+      "SName": "Bootstrap course",
+      "price": "365$",
+      "duration": "6 Month",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
+      "address": {
+        "street": "Dayna Park",
+        "suite": "Suite 449",
+        "city": "Bartholomebury",
+        "zipcode": "76495-3109",
+        "geo": {
+          "lat": "24.6463",
+          "lng": "-168.8889"
+        }
+      },
+      "phone": "(775)976-6794 x41206",
+      "website": "conrad.com",
+      "company": {
+        "name": "Yost and Sons",
+        "catchPhrase": "Switchable contextually-based project",
+        "bs": "aggregate real-time technologies"
       }
     },
-    "phone": "(775)976-6794 x41206",
-    "website": "conrad.com",
-    "company": {
-      "name": "Yost and Sons",
-      "catchPhrase": "Switchable contextually-based project",
-      "bs": "aggregate real-time technologies"
-    }
-  },
-  {
-    "id": 10,
-    "shortName":"C++",
-    "name": "Clementina DuBuque",
-    "username": "Moriah.Stanton",
-    "tImage":"https://i.ytimg.com/vi/QP_dA2E9E_w/maxresdefault.jpg",
-    "email": "Rey.Padberg@karina.biz",
-        "image":"https://www.logo.wine/a/logo/C%2B%2B/C%2B%2B-Logo.wine.svg",
-    "SName":"C++ course",
-    "price":"42$",
-    "duration":"6 Month",
-    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
-    "address": {
-      "street": "Kattie Turnpike",
-      "suite": "Suite 198",
-      "city": "Lebsackbury",
-      "zipcode": "31428-2261",
-      "geo": {
-        "lat": "-38.2386",
-        "lng": "57.2232"
+    {
+      "id": 10,
+      "shortName": "C++",
+      "name": "Clementina DuBuque",
+      "username": "Moriah.Stanton",
+      "tImage": "https://i.ytimg.com/vi/QP_dA2E9E_w/maxresdefault.jpg",
+      "email": "Rey.Padberg@karina.biz",
+      "image": "https://www.logo.wine/a/logo/C%2B%2B/C%2B%2B-Logo.wine.svg",
+      "SName": "C++ course",
+      "price": "42$",
+      "duration": "6 Month",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corporis fuga minima porro? Quasi adipisci sequi, ullam corporis eius perspiciatis nesciunt necessitatibus iste cum tempora.",
+      "address": {
+        "street": "Kattie Turnpike",
+        "suite": "Suite 198",
+        "city": "Lebsackbury",
+        "zipcode": "31428-2261",
+        "geo": {
+          "lat": "-38.2386",
+          "lng": "57.2232"
+        }
+      },
+      "phone": "024-648-3804",
+      "website": "ambrose.net",
+      "company": {
+        "name": "Hoeger LLC",
+        "catchPhrase": "Centralized empowering task-force",
+        "bs": "target end-to-end models"
       }
-    },
-    "phone": "024-648-3804",
-    "website": "ambrose.net",
-    "company": {
-      "name": "Hoeger LLC",
-      "catchPhrase": "Centralized empowering task-force",
-      "bs": "target end-to-end models"
     }
-  }
-]
+  ],
+  "quizzes": [
+    {
+      "title": "HTML",
+      "color": "#FFF1E9",
+      "icon": "/assets/icon-html.svg",
+      "questions": [
+        {
+          "question": "What does HTML stand for?",
+          "options": [
+            "Hyper Trainer Marking Language",
+            "Hyper Text Marketing Language",
+            "Hyper Text Markup Language",
+            "Hyper Text Markup Leveler"
+          ],
+          "answer": "Hyper Text Markup Language"
+        },
+        {
+          "question": "Which of the following is the correct structure for an HTML document?",
+          "options": [
+            "<html><head></head><body></body></html>",
+            "<head><html></html><body></body></head>",
+            "<body><head></head><html></html></body>",
+            "<html><body></body><head></head></html>"
+          ],
+          "answer": "<html><head></head><body></body></html>"
+        },
+        {
+          "question": "Which HTML element is used to define the title of a document?",
+          "options": ["<head>", "<title>", "<header>", "<top>"],
+          "answer": "<title>"
+        },
+        {
+          "question": "What is the purpose of the <body> tag in HTML?",
+          "options": [
+            "It defines the document's head section.",
+            "It contains all the content such as text, images, and links.",
+            "It is used to define the main content of an HTML document.",
+            "It specifies the body of the email content in HTML."
+          ],
+          "answer": "It contains all the content such as text, images, and links."
+        },
+        {
+          "question": "Which HTML tag is used to create a hyperlink?",
+          "options": ["<hyperlink>", "<link>", "<a>", "<href>"],
+          "answer": "<a>"
+        },
+        {
+          "question": "Which tag is used to display images in HTML?",
+          "options": ["<img>", "<image>", "<src>", "<pic>"],
+          "answer": "<img>"
+        },
+        {
+          "question": "What attribute is used to provide the path of an image in the <img> tag?",
+          "options": ["link", "src", "href", "url"],
+          "answer": "src"
+        },
+        {
+          "question": "Which HTML tag is used to create an unordered list?",
+          "options": ["<ul>", "<ol>", "<list>", "<li>"],
+          "answer": "<ul>"
+        },
+        {
+          "question": "What does the <br> tag do?",
+          "options": [
+            "It breaks the text into two sections.",
+            "It creates a bold text.",
+            "It inserts a line break.",
+            "It adds a new row in a table."
+          ],
+          "answer": "It inserts a line break."
+        },
+        {
+          "question": "In HTML, what does the `fieldset` tag do?",
+          "options": [
+            "It is used to group related data in a form.",
+            "It sets the field to a fixed size.",
+            "It automatically validates the fields within a form.",
+            "It hides the fields in a form."
+          ],
+          "answer": "It is used to group related data in a form."
+        }
+      ]
+    },
+    {
+      "title": "CSS",
+      "color": "#E0FDEF",
+      "icon": "/assets/icon-css.svg",
+      "questions": [
+        {
+          "question": "What does CSS stand for?",
+          "options": [
+            "Colorful Style Sheets",
+            "Computer Style Sheets",
+            "Cascading Style Sheets",
+            "Creative Style Sheets"
+          ],
+          "answer": "Cascading Style Sheets"
+        },
+        {
+          "question": "Which HTML attribute is used to define inline styles?",
+          "options": ["styles", "style", "class", "font-style"],
+          "answer": "style"
+        },
+        {
+          "question": "How do you insert a comment in a CSS file?",
+          "options": [
+            "// this is a comment //",
+            "/* this is a comment */",
+            "-- this is a comment --",
+            "<!-- this is a comment -->"
+          ],
+          "answer": "/* this is a comment */"
+        },
+        {
+          "question": "Which property is used to change the background color of an element?",
+          "options": ["color", "bgcolor", "background-color", "background"],
+          "answer": "background-color"
+        },
+        {
+          "question": "How do you apply a style to all <p> elements?",
+          "options": ["p { }", ".p { }", "#p { }", "all.p { }"],
+          "answer": "p { }"
+        },
+        {
+          "question": "Which property is used to change the font of an element?",
+          "options": ["font-style", "text-style", "font-family", "typeface"],
+          "answer": "font-family"
+        },
+        {
+          "question": "How do you make each word in a text start with a capital letter?",
+          "options": [
+            "text-transform: capitalize",
+            "text-transform: uppercase",
+            "text-style: capital",
+            "font-transform: capitalize"
+          ],
+          "answer": "text-transform: capitalize"
+        },
+        {
+          "question": "How do you select an element with the class name 'header'?",
+          "options": [".header", "#header", "header", "*header"],
+          "answer": ".header"
+        },
+        {
+          "question": "What is the default value of the 'position' property?",
+          "options": ["relative", "fixed", "absolute", "static"],
+          "answer": "static"
+        },
+        {
+          "question": "What is the purpose of the z-index property in CSS?",
+          "options": [
+            "To count the number of elements",
+            "To set the magnification level of an element",
+            "To specify the stack order of an element",
+            "To create a zoom effect"
+          ],
+          "answer": "To specify the stack order of an element"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript",
+      "color": "#EBF0FF",
+      "icon": "/assets/icon-javascript.svg",
+      "questions": [
+        {
+          "question": "Which syntax is correct to output 'Hello World' in an alert box?",
+          "options": [
+            "alertBox('Hello World');",
+            "msg('Hello World');",
+            "alert('Hello World');",
+            "msgBox('Hello World');"
+          ],
+          "answer": "alert('Hello World');"
+        },
+        {
+          "question": "How do you call a function named 'myFunction'?",
+          "options": [
+            "call function myFunction()",
+            "call myFunction()",
+            "myFunction()",
+            "execute myFunction()"
+          ],
+          "answer": "myFunction()"
+        },
+        {
+          "question": "How to write an IF statement in JavaScript?",
+          "options": ["if i = 5 then", "if (i == 5)", "if i == 5", "if i = 5"],
+          "answer": "if (i == 5)"
+        },
+        {
+          "question": "How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
+          "options": [
+            "if (i <> 5)",
+            "if i =! 5 then",
+            "if (i != 5)",
+            "if i not = 5"
+          ],
+          "answer": "if (i != 5)"
+        },
+        {
+          "question": "How does a FOR loop start?",
+          "options": [
+            "for (i = 0; i <= 5)",
+            "for i = 1 to 5",
+            "for (i <= 5; i++)",
+            "for (i = 0; i <= 5; i++)"
+          ],
+          "answer": "for (i = 0; i <= 5; i++)"
+        },
+        {
+          "question": "How can you add a single-line comment in JavaScript?",
+          "options": [
+            "'This is a single-line comment",
+            "//This is a single-line comment",
+            "<!--This is a single-line comment-->",
+            "/* This is a single-line comment */"
+          ],
+          "answer": "//This is a single-line comment"
+        },
+        {
+          "question": "What is the correct way to write a JavaScript array?",
+          "options": [
+            "var colors = (1:'red', 2:'green', 3:'blue')",
+            "var colors = ['red', 'green', 'blue']",
+            "var colors = 'red', 'green', 'blue'",
+            "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')"
+          ],
+          "answer": "var colors = ['red', 'green', 'blue']"
+        },
+        {
+          "question": "How do you find the number with the highest value of x and y?",
+          "options": [
+            "Math.ceil(x, y)",
+            "top(x, y)",
+            "Math.max(x, y)",
+            "Math.highest(x, y)"
+          ],
+          "answer": "Math.max(x, y)"
+        },
+        {
+          "question": "Which operator is used to assign a value to a variable?",
+          "options": ["-", "*", "=", "x"],
+          "answer": "="
+        },
+        {
+          "question": "What is the correct way to write a JavaScript object?",
+          "options": [
+            "var person = {firstName: 'John', lastName: 'Doe'};",
+            "var person = {firstName = 'John', lastName = 'Doe'};",
+            "var person = (firstName: 'John', lastName: 'Doe');",
+            "var person = (firstName = 'John', lastName = 'Doe');"
+          ],
+          "answer": "var person = {firstName: 'John', lastName: 'Doe'};"
+        }
+      ]
+    },
+    {
+      "title": "Accessibility",
+      "color": "#F6E7FF",
+      "icon": "/assets/icon-accessibility.svg",
+      "questions": [
+        {
+          "question": "What does 'WCAG' stand for?",
+          "options": [
+            "Web Content Accessibility Guidelines",
+            "Web Compliance Accessibility Guide",
+            "Web Content Accessibility Goals",
+            "Website Compliance and Accessibility Guidelines"
+          ],
+          "answer": "Web Content Accessibility Guidelines"
+        },
+        {
+          "question": "Which element is used to provide alternative text for images for screen reader users?",
+          "options": [
+            "<alt>",
+            "<figcaption>",
+            "<description>",
+            "<img alt='description'>"
+          ],
+          "answer": "<img alt='description'>"
+        },
+        {
+          "question": "What does ARIA stand for in web development?",
+          "options": [
+            "Accessible Rich Internet Applications",
+            "Advanced Responsive Internet Assistance",
+            "Accessible Responsive Internet Applications",
+            "Automated Responsive Internet Actions"
+          ],
+          "answer": "Accessible Rich Internet Applications"
+        },
+        {
+          "question": "Which of the following is not a principle of the WCAG?",
+          "options": [
+            "Perceivable",
+            "Dependable",
+            "Operable",
+            "Understandable"
+          ],
+          "answer": "Dependable"
+        },
+        {
+          "question": "Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?",
+          "options": ["3:1", "4.5:1", "7:1", "2:1"],
+          "answer": "4.5:1"
+        },
+        {
+          "question": "Which of the following elements is inherently focusable, meaning it can receive focus without a 'tabindex' attribute?",
+          "options": ["<div>", "<span>", "<a href='...'>", "<p>"],
+          "answer": "<a href='...'>"
+        },
+        {
+          "question": "What is the purpose of the 'lang' attribute in an HTML page?",
+          "options": [
+            "To specify the scripting language",
+            "To define the character set",
+            "To indicate the language of the page content",
+            "To declare a language pack"
+          ],
+          "answer": "To indicate the language of the page content"
+        },
+        {
+          "question": "Which guideline ensures that content is accessible by keyboard as well as by mouse?",
+          "options": [
+            "Keyboard Accessible",
+            "Mouse Independence",
+            "Device Independence",
+            "Operable Controls"
+          ],
+          "answer": "Keyboard Accessible"
+        },
+        {
+          "question": "What is the role of 'skip navigation' links in web accessibility?",
+          "options": [
+            "To skip over primary navigation to the main content",
+            "To provide shortcuts to different sections of the website",
+            "To help users skip unwanted sections like advertisements",
+            "To bypass broken links in the navigation"
+          ],
+          "answer": "To skip over primary navigation to the main content"
+        },
+        {
+          "question": "Which of these tools can help in checking the accessibility of a website?",
+          "options": [
+            "W3C Validator",
+            "Google Lighthouse",
+            "CSS Validator",
+            "JavaScript Console"
+          ],
+          "answer": "Google Lighthouse"
+        }
+      ]
+    }
+  ]
 }

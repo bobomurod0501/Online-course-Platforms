@@ -5,6 +5,7 @@ import AboutCourse from "./AboutCourse";
 import { MenuList } from "./MenulLst";
 import ToggleThemeButton from "./ToggleThemeButton";
 import Logo from "./Logo";
+import FooterPage from "./FooterPage";
 
 const { Header, Sider, Content, Footer } = Layout;
 
@@ -31,9 +32,9 @@ const siderStyle = {
   userSelect: "none",
 };
 const footerStyle = {
-  textAlign: "center",
   color: "#fff",
-  backgroundColor: "#4096ff",
+  backgroundColor: "#233A6C",
+  paddingLeft:"230px"
 };
 const layoutStyle = {
   width: "calc(100% - 8px)",
@@ -62,7 +63,9 @@ function NewApp() {
           <Content style={contentStyle}>
              <AboutCourse />
           </Content>                          
-          <Footer style={footerStyle}>Footer</Footer>
+          <Footer style={footerStyle}>
+            <FooterPage/>
+          </Footer>
         </Layout>
       </Layout>
     </div>

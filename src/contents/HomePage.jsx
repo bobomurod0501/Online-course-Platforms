@@ -4,6 +4,10 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import Card1 from "../components/Card";
 import { useParams } from "react-router-dom";
+import EnrolledCoursePage from "../components/EnrolledCoursePage";
+import ProfilePage from "../components/ProfilePage";
+import QuizTestPage from "../components/QuizTestPage";
+import HtmlTestPage from "../components/HtmlTestPage";
 
 
 
@@ -13,14 +17,41 @@ const fetchData = async() => {
 
 function HomePage() {
 
-const params = useParams()
+    const {data, isLoading, isError, error,} = useQuery('courses', fetchData, {staleTime:1000000})
 
-// console.log(params)
+if(isLoading){
+  return <div>
+    <h1>Loading...</h1>
+  </div>
+}
+if(isError){
+  return  <div>
+    <h1>{error.message}</h1>
+  </div>
+}
+  
+  const params = useParams()
+  console.log(params.component)
+
+// console.log(params.testId)
 
 if(params.component == "dashboard"){
   return <div>
-    <h1>Dashboard page</h1>
+    <QuizTestPage />
   </div>
+}
+
+if(params.component == "home"){
+   return (
+    <div>
+      <div>
+        <h1></h1>
+        <h1>Learning is what you Make of it. Make it Yours at SkillGro </h1>
+        <img className="homeLogoImg" src="https://www.janbasktraining.com/blog/uploads/images/Online_IT_Courses_1_6.webp" alt="" />
+        <Card1 data={data}/>
+      </div>
+    </div>
+  );
 }
 if(params.component == "activeuser"){
   return <div>
@@ -34,37 +65,34 @@ if(params.component == "disableuser"){
 }
 if(params.component == "profile"){
   return <div>
-    <h1> Profile page</h1>
+      <ProfilePage />
+  </div>
+}
+if(params.testId == "html" || "css" || "javascript" || "accessibility"){
+  return <div>
+      <HtmlTestPage />
   </div>
 }
 
 
   
-  const {data, isLoading, isError, error,} = useQuery('courses', fetchData, {staleTime:1000000})
 
-if(isLoading){
-  return <div>
-    <h1>Loading...</h1>
-  </div>
-}
-if(isError){
-  return  <div>
-    <h1>{error.message}</h1>
-  </div>
-}
 
 // console.log(data)
+// if(params.component == "home"){
 
-  return (
-    <div>
-      <div>
-        <h1></h1>
-        <h1>Learning is what you Make of it. Make it Yours at SkillGro </h1>
-        <img className="homeLogoImg" src="https://www.janbasktraining.com/blog/uploads/images/Online_IT_Courses_1_6.webp" alt="" />
-        <Card1 data={data}/>
-      </div>
-    </div>
-  );
+//   return (
+//     <div>
+//       <div>
+//         <h1></h1>
+//         <h1>Learning is what you Make of it. Make it Yours at SkillGro </h1>
+//         <img className="homeLogoImg" src="https://www.janbasktraining.com/blog/uploads/images/Online_IT_Courses_1_6.webp" alt="" />
+//         <Card1 data={data}/>
+//       </div>
+//     </div>
+//   );
+// }
 }
 
 export default HomePage;
+

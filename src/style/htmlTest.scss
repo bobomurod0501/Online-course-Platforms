@@ -1,0 +1,112 @@
+.testPageLeft {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  p {
+    font-size: 24px;
+    font-style: italic;
+    color: rgb(123, 123, 123);
+  }
+  h3 {
+    font-size: 32px;
+    margin-top: -20px;
+    color: #3c3c55;
+    font-family: Rubik, sans-serif;
+  }
+}
+
+.testBtn {
+  width: 560px;
+  height: 90px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 10px;
+  padding-left: 20px;
+  // border: 3px solid green;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+  span {
+    width: 60px;
+    height: 60px;
+    background-color: #f2f4f8;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    justify-content: center;
+    border-radius: 10px;
+    color: #656566;
+  }
+}
+.testBtnBox {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.questionsBox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.testPageBox {
+  background-color: rgb(240, 246, 246);
+  //    padding-left: -50px;
+  margin-left: -50px;
+  margin-top: -20px;
+  padding: 50px;
+}
+
+// .submitBtn {
+//   background-color: #a729f5;
+// }
+/* From Uiverse.io by adamgiebl */
+.testSubmitBtn {
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
+    0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
+    inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: #fff;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  width: 550px;
+  margin-top: 50px;
+}
+
+.testSubmitBtn:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%),
+    0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  transform: translateY(-0.1em);
+}
+
+.testSubmitBtn:active {
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
+.testPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1200px;
+  margin-right: 23px;
+  margin-bottom: 50px;
+  // justify-content: space-between;
+}

@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bruno+Ace&family=Notable&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik+Distressed&family=Sunflower:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;800;900&display=swap');
+
+
 
 .menu{
     display: flex;
@@ -397,3 +400,196 @@ background: linear-gradient(20deg, rgba(222,213,129,1) 0%, rgba(196,178,145,1) 2
     align-items: center;
     gap: 180px;
 }
+
+.personProfileImg{
+  width: 150px;
+  border-radius: 50%;
+}
+.profileImgBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  border: 3px solid rgb(212, 211, 211);
+  gap: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #f5f7f7;
+}
+
+.enrolledcourseBox{
+  width: 60%;
+  height: 400px;
+  background-color: #B1B7BE;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 15px;
+  border: 3px solid rgb(192, 191, 191);
+  user-select: none;
+  border-radius: 15px;
+}
+.box{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  /* z-index: 10; */
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.jsImg{
+  width: 80px;
+  border-radius: 50%;
+}
+
+.jsBox{
+  /* width: 100%; */
+  /* height: 150px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 10px; */
+  background-color: #e5e9ea;
+  cursor: pointer;
+  padding: 13px;
+  transition: 0.3s;
+  border-radius: 13px;
+
+}
+.jsBox p{
+  font-size: 25px;
+}
+
+.jsBox:hover {
+  background-color: #d2d5da;
+  transform: scale(0.97);
+}
+.footerBox{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.mediaIcons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100px;
+  margin-left:auto ;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+.mediaIcons img {
+  width: 20px;
+  cursor: pointer;
+  /* border-radius: 50%; */
+}
+.footerCOpyRight{
+  text-align: center;
+}
+.footerCOpyRight p{
+  color: #cacfcf;
+  letter-spacing: 0.9px;
+  /* line-height: 10px; */
+}
+.testHtml, .testCss, .testJs, .testLastIcon{
+  width: 570px;
+  height: 96px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.testHtml img{
+  background-color:#fff1e9;
+  padding: 5px;
+  border-radius: 5px;
+}
+.testHtml p{
+  font-size: 23px;
+  margin-left: 20px;
+  font-family: 'Rubik', sans-serif;
+  color: #4a4a4a;
+  font-weight: 600;
+}
+
+.quizTestBox{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 90vh;
+  padding-bottom: 150px;
+  padding-top: 100px;
+  background-color: rgb(229, 243, 248);
+  margin-right: 50px;
+  margin-top: -15px;
+
+
+}
+.subjectBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 480px;
+}
+.testCss img{
+    padding: 5px;
+  border-radius: 5px;
+  background-color: #e0fdef;
+}
+.testCss p, .testJs p, .testLastIcon p{
+  font-size: 23px;
+  margin-left: 20px;
+  font-family: 'Rubik', sans-serif;
+  color: #4a4a4a;
+  font-weight: 600;
+}
+.testJs img{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ebf0ff;
+}
+.quizzTestTitle h1{
+  font-size: 64px;
+  font-weight: 300;
+}
+.frontendQuiz{
+  font-weight: 500;
+}
+.quizzTestTitle p{
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: Rubik, sans-serif;
+  color: #686868;
+}
+.testLastIcon img {
+   padding: 5px;
+  border-radius: 5px;
+  background-color: #f6e7ff;
+}
+.testPage{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.testPage img{
+  background-color:#fff1e9;
+  padding: 7px;
+  border-radius: 6px;
+}
+.testPage p{
+  font-size: 24px;
+  margin-left: 20px;
+  font-family: 'Rubik', sans-serif;
+  color: #4a4a4a;
+  font-weight: 600;
+}
+
