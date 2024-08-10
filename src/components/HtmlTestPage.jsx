@@ -1,86 +1,152 @@
-import React from "react";
-import htmlIcon from "../images/htmlIcon.svg";
+import React, { useState } from "react";
 import { Flex, Progress } from "antd";
 import "../style/htmlTest.scss";
 import { Button } from "@mui/material";
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import axios from "axios";
+import { useRef } from "react";
+import { useContext } from "react";
+import { contextProvider } from "../provider/MainProvider";
 
 
 
 const fetchQuizTestData = async () => {
-  return await axios.get('http://localhost:3000/quizzes')
-}
-
-
+  return await axios.get("http://localhost:3000/quizzes");
+};
 
 function HtmlTestPage() {
-  const params = useParams()
-  // console.log(params.testId)
-  
-  const navigate = useNavigate()
+  const [questionNum, setQuestionNum] = useState(0);
+  const[result, setResult] = useState('')
+  const [isPressed, setIsPressed] = useState(false)
+  const states = useContext(contextProvider)
+  const {trueAnswer, setTrueAnswer, testData, setTestData} = states
+
+  // console.log(trueAnswer)
+  const params = useParams();
+
+  const navigate = useNavigate();
   const backFunc = () => {
-  navigate("/dashboard")
+    navigate("/dashboard");
+  };
+
+  const { data, isError, error, isLoading } = useQuery(
+    ["quiz"],
+    fetchQuizTestData
+  );
+  if (isLoading) {
+    return <h1>Loading</h1>;
   }
 
-  const {data, isError, error, isLoading} = useQuery(['quiz'], fetchQuizTestData)
-  if(isLoading){
-    return <h1>Loading</h1>
+  if (isError) {
+    return <h1>{error.message}</h1>;
   }
+
+  // console.log(data)
+
+  const newData = data?.data.filter(
+    (item) => item.title.toLowerCase() == params.testId
+  );
+  // console.log(newData);
+
+  const submitButtonFunc = () => {
+    setTestData(newData)
+    if(isPressed){
+      setQuestionNum(questionNum ==9 ? 9 && navigate("resultpage")  : questionNum + 1);
+      questionNum == 9 ? setIsPressed(true) : setIsPressed(false)
+    }else{
+      alert("please select answer")
+      setQuestionNum(questionNum)
+    }
+    
+  };
+  const checkTestAnswer = (val) => {
+    if(newData[0].questions[questionNum].answer == val){
+      setResult(true)
+      setTrueAnswer(trueAnswer + 1)
+    }else{
+      setResult(false)
+    }
+    setIsPressed(true)
+
+
+
+  };
+
+  console.log(result)
+
   
-  if(isError){
-    return <h1>{error.message}</h1>
-  }
-
-// console.log(data)
-
-const newData = data?.data.filter((item) => (item.title).toLowerCase() == params.testId)
-console.log(newData)
-
-
-const checkTestAnswer = () => {}
 
   return (
     <div className="testPageBox" style={{ height: "90vh" }}>
       <div className="testPage">
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <img style={{background:`${newData[0].color}`}} src={newData[0].icon} alt="" />
+          <img
+            style={{ background: `${newData[0].color}` }}
+            src={newData[0].icon}
+            alt=""
+          />
           <p>{newData[0].title}</p>
         </div>
-        <Button onClick={() => backFunc()} variant="outlined"> <ArrowBackIcon /> {" "}Back</Button>
+        <Button onClick={() => backFunc()} variant="outlined">
+          {" "}
+          <ArrowBackIcon /> Back
+        </Button>
       </div>
       <div className="questionsBox">
         <div className="testPageLeft">
-          <p>Question 6 of 10</p>
-          <h3>
-            {newData[0].questions[1].question}
-          </h3>
+          <p>Question {questionNum + 1} of 10</p>
+          <h3>{newData[0].questions[questionNum].question}</h3>
 
           <Flex gap="middle" vertical style={{ width: "500px" }}>
             <Progress
-              percent={30}
+              percent={(questionNum + 1) * 10}
               percentPosition={{ align: "start" }}
               size={[500, 15]}
             />
           </Flex>
         </div>
         <div className="testBtnBox">
-          <button onClick={checkTestAnswer} className="testBtn">
-            <span>A</span> {newData[0].questions[1].options[0]}
+          <button
+            value={`${newData[0].questions[questionNum].options[0]}`}
+            onClick={(e) => checkTestAnswer(e.target.value)}
+            className="testBtn"
+          >
+            <span>A</span> {newData[0].questions[questionNum].options[0]}
           </button>
-          <button className="testBtn">
-            <span>B</span> {newData[0].questions[1].options[1]}
+          <button
+            value={`${newData[0].questions[questionNum].options[1]}`}
+            onClick={(e) => checkTestAnswer(e.target.value)}
+            className="testBtn"
+            // style={isPressed ? {border: "3px solid blue"} : ""}
+          >
+            <span>B</span> {newData[0].questions[questionNum].options[1]}
           </button>
-          <button className="testBtn">
-            <span>C</span> {newData[0].questions[1].options[2]}
+          <button
+            value={`${newData[0].questions[questionNum].options[2]}`}
+            onClick={(e) => checkTestAnswer(e.target.value)}
+            className="testBtn"
+            // style={isPressed ? {border: "3px solid blue"} : ""}
+          >
+            <span>C</span> {newData[0].questions[questionNum].options[2]}
           </button>
-          <button className="testBtn">
-            <span>D</span> {newData[0].questions[1].options[3]}
+          <button
+            value={`${newData[0].questions[questionNum].options[3]}`}
+            onClick={(e) => checkTestAnswer(e.target.value)}
+            className="testBtn"
+            // style={isPressed ? {border:' 3px solid blue'} : ""}
+          >
+            <span>D</span> {newData[0].questions[questionNum].options[3]}
           </button>
-          <button className="testSubmitBtn"> Next</button>
+          <button
+            onClick={() => submitButtonFunc()}
+            className="testSubmitBtn"
+          >
+            {" "}
+            {questionNum == 9 ? "Submit" : "Next"}
+          </button>
         </div>
       </div>
     </div>

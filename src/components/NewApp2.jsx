@@ -6,6 +6,8 @@ import { MenuList } from "./MenulLst";
 import ToggleThemeButton from "./ToggleThemeButton";
 import Logo from "./Logo";
 import FooterPage from "./FooterPage";
+import { useParams } from "react-router-dom";
+import ResultPage from "./ResultPage";
 
 const { Header, Sider, Content, Footer } = Layout;
 
@@ -19,7 +21,7 @@ const headerStyle = {
 };
 const contentStyle = {
   minHeight: 120,
-  backgroundColor: "#eceeef",
+  backgroundColor: "#c7e9fa",
   paddingLeft: "250px",
   paddingTop: "80px",
 };
@@ -42,13 +44,16 @@ const layoutStyle = {
 };
 
 
-function NewApp() {
+function NewApp2() {
 
   const [dark, setDark] = useState(false);
 
   const toggleTheme = () => {
     setDark(!dark);
   };
+
+  const params = useParams()
+  console.log(params)
 
   return (
     <div>
@@ -61,7 +66,7 @@ function NewApp() {
         <Layout>
           <Header style={headerStyle}>Header</Header>
           <Content style={contentStyle}>
-             <AboutCourse />
+             <ResultPage />
           </Content>                          
           <Footer style={footerStyle}>
             <FooterPage/>
@@ -72,4 +77,4 @@ function NewApp() {
   );
 }
 
-export default NewApp;
+export default NewApp2;

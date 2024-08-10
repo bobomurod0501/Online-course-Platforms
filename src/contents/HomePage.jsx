@@ -4,10 +4,10 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import Card1 from "../components/Card";
 import { useParams } from "react-router-dom";
-import EnrolledCoursePage from "../components/EnrolledCoursePage";
 import ProfilePage from "../components/ProfilePage";
 import QuizTestPage from "../components/QuizTestPage";
 import HtmlTestPage from "../components/HtmlTestPage";
+import ResultPage from "../components/ResultPage";
 
 
 
@@ -31,9 +31,8 @@ if(isError){
 }
   
   const params = useParams()
-  console.log(params.component)
 
-// console.log(params.testId)
+console.log(params)
 
 if(params.component == "dashboard"){
   return <div>

@@ -12,18 +12,13 @@ import { createContext } from "react";
 
 
 
-export const contextProvider = createContext(null)
-
-
-
-
 
 
 const { Header, Sider, Content, Footer } = Layout;
 
 const headerStyle = {
   textAlign: "center",
-  height: 64,
+  height: 90,
   backgroundColor: "white",
   position: "fixed",
   width: "100%",
@@ -31,7 +26,7 @@ const headerStyle = {
 };
 const contentStyle = {
   minHeight: 120,
-  backgroundColor: "#eceeef",
+  backgroundColor: "#ededed",
   paddingLeft: "250px",
   paddingTop: "80px",
 };
@@ -58,14 +53,13 @@ const layoutStyle = {
 function App() {
 
   const [dark, setDark] = useState(false);
-  const enrolledCourseData = useState()
 
   const toggleTheme = () => {
     setDark(!dark);
   };
 
   return (
-    <contextProvider.Provider value={{}}>
+    <div>
       <Layout style={layoutStyle}>
         <Sider width="10%" style={siderStyle}>
           <Logo />
@@ -82,7 +76,7 @@ function App() {
           </Footer>
         </Layout>
       </Layout>
-    </contextProvider.Provider>
+    </div>
   );
 }
 
