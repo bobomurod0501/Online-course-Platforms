@@ -45,6 +45,10 @@
     border-radius: 10px;
     color: #656566;
   }
+  .variantbackColor{
+  background-color: #3c4fe0;
+  color: white;
+}
 }
 .testBtnBox {
   width: 40%;
@@ -109,4 +113,12 @@
   margin-right: 23px;
   margin-bottom: 50px;
   // justify-content: space-between;
+}
+
+.borderColor{
+  border: 3px solid blue;
+}
+
+.adasd{
+  background-color: #3c3c55;
 }
